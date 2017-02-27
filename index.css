@@ -1,0 +1,128 @@
+#Current {
+  background: url(img/cloud.png) no-repeat 100% 0;
+  background-size: 100px 50px;
+  background-color: #f2f2f2;
+  position: relative;
+  height: 61px;
+  z-index: 10;
+}
+#Current > a {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right;
+  position: absolute;
+  right:10px;
+  bottom:15px;
+}
+#Current > div.date {
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  padding-right: 9px;
+}
+.uuvijuvs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#div-current-city {
+  width: 50%;
+  height: 90%;
+}
+#dropdownMenu1 {
+  width: 60%;
+  height: 80%;
+}
+#nav-navbar{
+  position: relative;
+  margin: 0;
+}
+#nav-navbar .col-xs-2{
+  padding: 0px 5px;
+  border-right: #49525d 1px solid;
+  display: table-cell;
+  height: 100%;
+  min-height: 100%;
+  float: none !important;
+  height: 40px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+#nav-navbar .col-xs-3{
+  padding: 3px 5px;
+  border-right: #49525d 1px solid;
+  display: table-cell;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+nav.navbar {
+  min-height:40px;
+}
+id-button-navmenu {
+  width: 60px;
+  color: white;
+  background-color: black;
+  border-color: grey;
+}
+.dayTab {
+  position: relative;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.col-xs-12 {
+  text-align: center;
+}
+#englishLink {
+  clear: both;
+  text-align: center;
+  height: 30px;
+  padding: 15px 0 5px;
+}
+#englishLink a{
+  display: block;
+  padding: 10px 0 10px 0;
+  background: #f05514;
+  color: #ffffff;
+}
+#id-img-logo2{
+  display: block;
+  width: 100%;
+}
+#id-div-links img {
+  width: 22px;
+  height:22px;
+  padding: 0;
+  margin: 0px;
+}
+.footer>.container {
+  margin-top: 25px;
+  padding: 0 10px ;
+  text-align: center;
+  font-size: 12px;
+  color:#141d27;
+}
+.footer>.container a {
+  color:#141d27;
+}
+div#id-div-links > div{
+  padding: 0px;
+  border-right: #cccccc 1px solid;
+}
+div#id-div-links > div:last-child{
+  border:none;
+}
+#id-div-copyright{
+
+}

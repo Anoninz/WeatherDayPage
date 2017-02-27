@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="container-fluid">
+      <a href="#"><img src="img/logo.jpg" alt=""></a>
+    </div>
+    <!-- 当日天气 -->
+    <div class="container-fluid" id="Current">
+      <div class="dropdown uuvijuvs" id="div-current-city">
+        <button class="btn btn-default dropdown-toggle uuvijuvs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          北京市
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="请输入城市">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+              </span>
+            </div>
+          </li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">使用当前位置</a></li>
+        </ul>
+      </div>
+      <a href="#"><b>7℃</b></a>
+      <div class="date">
+        <div class="aqi">
+          优
+        </div>
+      02 月 25 日 10:09 星期六
+      </div>
+    </div>
+    <!-- menu navigator -->
+    <nav class="navbar navbar-inverse center-block" role="navigation" id='nav-navbar'>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"><a href="#">15天预报</a></div>
+            <div class="col-xs-2"><a href="#">90天预报</a></div>
+            <div class="col-xs-2"><a href="#">空气质量</a></div>
+            <div class="col-xs-3 dropdown pull-right">
+              <button id="id-button-navmenu"class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              其他
+                <span class="caret"></span>
+              </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">当前天气情况</a></li>
+                    <li><a href="#">小时预报</a></li>
+                    <li><a href="#">15天预报</a></li>
+                    <li><a href="#">90天预报</a></li>
+                    <li><a href="#">本月天气预报</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- day tab -->
+    <div class="dayTab">
+  		<div class="carousel slide" id="id-div-3days">
+  			<ol class="carousel-indicators">
+  				<li class="active" data-slide-to="0" data-target="id-div-3days">
+  				</li>
+  				<li data-slide-to="1" data-target="id-div-3days">
+  				</li>
+  				<li data-slide-to="2" data-target="id-div-3days">
+  				</li>
+  			</ol>
+  			<div class="carousel-inner">
+  				<div class="item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12">
+                星期六，02月25日
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p>白昼<p>
+                  <p><strong>14&#176;</strong><span>最高温</span></p>
+                  <p>晴</p>
+                  <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+                <div class="col-xs-6">
+                  <p>夜间<p>
+                  <p><strong>14&#176;</strong><span>最低温</span></p>
+                  <p>多云转阴</p>
+                  <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+              </div>
+  				  </div>
+          </div>
+  				<div class="item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12">
+                星期日，02月26日
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p>白昼<p>
+                  <p><strong>14&#176;</strong><span>最高温</span></p>
+                  <p>晴</p>
+                  <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+                <div class="col-xs-6">
+                  <p>夜间<p>
+                  <p><strong>14&#176;</strong><span>最低温</span></p>
+                  <p>多云转阴</p>
+                  <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+              </div>
+  				  </div>
+  				</div>
+  				<div class="item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 center">
+                星期一，02月27日
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p>白昼<p>
+                  <p><strong>14&#176;</strong><span>最高温</span></p>
+                  <p>晴</p>
+                  <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+                <div class="col-xs-6">
+                  <p>夜间<p>
+                  <p><strong>14&#176;</strong><span>最低温</span></p>
+                  <p>多云转阴</p>
+                  <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+              </div>
+  				  </div>
+  				</div>
+  			</div>
+  		</div>
+        <a class="left carousel-control" id="id-a-prev" href="#id-div-3days" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" id="id-a-next" href="#id-div-3days" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div id="englishLink">
+        <a href="index.do?language=en">English Version</a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <a href="#"><img src="img/logo2.jpeg" alt="" id="id-img-logo2"></a>
+          </div>
+        </div>
+        <div class="row" id="id-div-links">
+          <div class="col-xs-offset-2 col-xs-2">
+            <img src="img/chinaweather.png" alt="" >
+            客户端
+          </div>
+          <div class="col-xs-2">
+            <img src="img/weixin.png" alt="" >
+            微信
+          </div>
+          <div class="col-xs-2">
+            <img src="img/weibo.png" alt="" >
+            微博
+          </div>
+          <div class="col-xs-3">
+            <img src="img/mail.png" alt="">
+            联系我们
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-3">
+            <a href="#">隐私声明</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#">条款</a>
+          </div>
+        </div>
+        <div class="row" id="id-div-copyright">
+          <a href="">
+          ©2015-2017 中国天气通 All Rights reserved.
+          <br>
+          京ICP备16022777号-1
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
