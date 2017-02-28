@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Bootstrap 101 Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -15,7 +14,7 @@
       <a href="#"><img src="img/logo.jpg" alt=""></a>
     </div>
     <!-- 当日天气 -->
-    <div class="container-fluid" id="Current">
+    <div class="container-fluid clearfix" id="Current">
       <div class="dropdown uuvijuvs" id="div-current-city">
         <button class="btn btn-default dropdown-toggle uuvijuvs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           北京市
@@ -82,92 +81,449 @@
   				<div class="item active">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 datePart">
                 星期六，02月25日
                 </div>
               </div>
             </div>
-            <div class="container">
+            <!-- 天气 -->
+            <div class="container weatherPart">
               <div class="row">
                 <div class="col-xs-6">
-                  <p>白昼<p>
+                  <p>白昼</p>
+                  <br>
+                  <img src="img/weather-sunny.png" alt="">
                   <p><strong>14&#176;</strong><span>最高温</span></p>
                   <p>晴</p>
                   <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <br>
                   <p>降水概率: <b>0%</b></p>
                 </div>
                 <div class="col-xs-6">
-                  <p>夜间<p>
-                  <p><strong>14&#176;</strong><span>最低温</span></p>
+                  <p>夜间</p>
+                  <br>
+                  <img src="img/weather-sunny-night.png" alt="">
+                  <p><strong>4&#176;</strong><span>最低温</span></p>
                   <p>多云转阴</p>
                   <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <br>
                   <p>降水概率: <b>0%</b></p>
+                </div>
+              </div>
+              <div class="row div-hourStatue">
+                <div class="col-xs-12">
+                  查看整点天气预报
+                  <i></i>
+                </div>
+              </div>
+              <!-- 详细天气情况 -->
+              <div class="container weatherDetail daytime">
+                <div class="row ">
+                  <div class="col-xs-12 detail-toggle">
+                    白天详细天气情况
+                    <i></i>
+                  </div>
+                </div>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 降水 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    降水
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 jluv">
+                    <p>降水概率：2%</p>
+                    <p>雷暴概率：0%</p>
+                    <p>降雨概率：1%</p>
+                    <p>降雪概率：0%</p>
+                    <p>结冰概率：0%</p>
+                  </div>
+                  <div class="col-xs-6 jluv">
+                    <p>总降水量预测：0.0mm</p>
+                    <p>降雨量预测：0.0mm</p>
+                    <p>降雪量预测：0.0mm</p>
+                    <p>结冰量预测：0.0mm</p>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container weatherDetail">
+                <div class="row">
+                  <div class="col-xs-12 detail-toggle nighttime">
+                    夜间详细天气情况
+                    <i></i>
+                  </div>
+                </div>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
   				  </div>
           </div>
-  				<div class="item">
+          <div class="item">
             <div class="container-fluid">
               <div class="row">
+                <div class="col-xs-12 datePart">
+                星期六，02月25日
+                </div>
+              </div>
+            </div>
+            <!-- 天气 -->
+            <div class="container weatherPart">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p>白昼</p>
+                  <br>
+                  <img src="img/weather-sunny.png" alt="">
+                  <p><strong>14&#176;</strong><span>最高温</span></p>
+                  <p>晴</p>
+                  <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <br>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+                <div class="col-xs-6">
+                  <p>夜间</p>
+                  <br>
+                  <img src="img/weather-sunny-night.png" alt="">
+                  <p><strong>4&#176;</strong><span>最低温</span></p>
+                  <p>多云转阴</p>
+                  <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <br>
+                  <p>降水概率: <b>0%</b></p>
+                </div>
+              </div>
+              <div class="row div-hourStatue">
                 <div class="col-xs-12">
-                星期日，02月26日
+                  查看整点天气预报
+                  <i></i>
                 </div>
               </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-6">
-                  <p>白昼<p>
-                  <p><strong>14&#176;</strong><span>最高温</span></p>
-                  <p>晴</p>
-                  <span>RealFeel&#174;<b> 15&#176;</b></span>
-                  <p>降水概率: <b>0%</b></p>
+              <!-- 详细天气情况 -->
+              <div class="container weatherDetail daytime">
+                <div class="row ">
+                  <div class="col-xs-12 detail-toggle">
+                    白天详细天气情况
+                    <i></i>
+                  </div>
                 </div>
-                <div class="col-xs-6">
-                  <p>夜间<p>
-                  <p><strong>14&#176;</strong><span>最低温</span></p>
-                  <p>多云转阴</p>
-                  <span>RealFeel&#174;<b> -1&#176;</b></span>
-                  <p>降水概率: <b>0%</b></p>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 降水 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    降水
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 jluv">
+                    <p>降水概率：2%</p>
+                    <p>雷暴概率：0%</p>
+                    <p>降雨概率：1%</p>
+                    <p>降雪概率：0%</p>
+                    <p>结冰概率：0%</p>
+                  </div>
+                  <div class="col-xs-6 jluv">
+                    <p>总降水量预测：0.0mm</p>
+                    <p>降雨量预测：0.0mm</p>
+                    <p>降雪量预测：0.0mm</p>
+                    <p>结冰量预测：0.0mm</p>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container weatherDetail">
+                <div class="row">
+                  <div class="col-xs-12 detail-toggle nighttime">
+                    夜间详细天气情况
+                    <i></i>
+                  </div>
+                </div>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
   				  </div>
-  				</div>
-  				<div class="item">
+          </div>
+          <div class="item">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-xs-12 center">
-                星期一，02月27日
+                <div class="col-xs-12 datePart">
+                星期六，02月25日
                 </div>
               </div>
             </div>
-            <div class="container">
+            <!-- 天气 -->
+            <div class="container weatherPart">
               <div class="row">
                 <div class="col-xs-6">
-                  <p>白昼<p>
+                  <p>白昼</p>
+                  <br>
+                  <img src="img/weather-sunny.png" alt="">
                   <p><strong>14&#176;</strong><span>最高温</span></p>
                   <p>晴</p>
                   <span>RealFeel&#174;<b> 15&#176;</b></span>
+                  <br>
                   <p>降水概率: <b>0%</b></p>
                 </div>
                 <div class="col-xs-6">
-                  <p>夜间<p>
-                  <p><strong>14&#176;</strong><span>最低温</span></p>
+                  <p>夜间</p>
+                  <br>
+                  <img src="img/weather-sunny-night.png" alt="">
+                  <p><strong>4&#176;</strong><span>最低温</span></p>
                   <p>多云转阴</p>
                   <span>RealFeel&#174;<b> -1&#176;</b></span>
+                  <br>
                   <p>降水概率: <b>0%</b></p>
                 </div>
               </div>
+              <div class="row div-hourStatue">
+                <div class="col-xs-12">
+                  查看整点天气预报
+                  <i></i>
+                </div>
+              </div>
+              <!-- 详细天气情况 -->
+              <div class="container weatherDetail daytime">
+                <div class="row ">
+                  <div class="col-xs-12 detail-toggle">
+                    白天详细天气情况
+                    <i></i>
+                  </div>
+                </div>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 降水 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    降水
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 jluv">
+                    <p>降水概率：2%</p>
+                    <p>雷暴概率：0%</p>
+                    <p>降雨概率：1%</p>
+                    <p>降雪概率：0%</p>
+                    <p>结冰概率：0%</p>
+                  </div>
+                  <div class="col-xs-6 jluv">
+                    <p>总降水量预测：0.0mm</p>
+                    <p>降雨量预测：0.0mm</p>
+                    <p>降雪量预测：0.0mm</p>
+                    <p>结冰量预测：0.0mm</p>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container weatherDetail">
+                <div class="row">
+                  <div class="col-xs-12 detail-toggle nighttime">
+                    夜间详细天气情况
+                    <i></i>
+                  </div>
+                </div>
+                <!-- 风速 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    风速
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3 wind" >
+                    <img src="img/sse.png" alt="">
+                  </div>
+                  <div class="col-xs-9 windspeed">
+                    <br>
+                    风向：西北偏北<br>
+                    风速：<b>3</b>级<br>
+                    <br>
+                    阵风风向：西北偏北<br>
+                    阵风风速：<b>4</b>级<br>
+                  </div>
+                </div>
+                <!-- 云量 -->
+                <div class="row">
+                  <div class="col-xs-12 title">
+                    云量
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 yyll">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 43%;">
+                        43%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
   				  </div>
-  				</div>
-  			</div>
+          </div>
+      	</div>
   		</div>
-        <a class="left carousel-control" id="id-a-prev" href="#id-div-3days" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" id="id-a-next" href="#id-div-3days" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+      <a class="left carousel-control" id="id-a-prev" href="#id-div-3days" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" id="id-a-next" href="#id-div-3days" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
     <!-- footer -->
     <div class="footer">
