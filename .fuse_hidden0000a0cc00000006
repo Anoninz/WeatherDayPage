@@ -1,0 +1,281 @@
+body {
+  background: #d6d3d2;
+}
+#Current {
+  background: url(img/cloud.png) no-repeat 100% 0;
+  background-size: 100px 50px;
+  background-color: #f2f2f2;
+  position: relative;
+  height: 61px;
+  z-index: 10;
+}
+#Current > a {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right;
+  position: absolute;
+  right:10px;
+  bottom:15px;
+}
+#Current > div.date {
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  padding-right: 9px;
+}
+.uuvijuvs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#div-current-city {
+  width: 50%;
+  height: 90%;
+}
+#dropdownMenu1 {
+  width: 60%;
+  height: 80%;
+}
+#nav-navbar{
+  position: relative;
+  margin: 0;
+}
+#nav-navbar .col-xs-2{
+  padding: 0px 5px;
+  border-right: #49525d 1px solid;
+  display: table-cell;
+  height: 100%;
+  min-height: 100%;
+  float: none !important;
+  height: 40px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+#nav-navbar .col-xs-3{
+  padding: 3px 5px;
+  border-right: #49525d 1px solid;
+  display: table-cell;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+nav.navbar {
+  min-height:40px;
+}
+id-button-navmenu {
+  width: 60px;
+  color: white;
+  background-color: black;
+  border-color: grey;
+}
+.dayTab {
+  position: relative;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.col-xs-12 {
+  text-align: center;
+}
+.datePart {
+  color: #00afbe;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  text-align: left;
+  background: white;
+  border: 2px solid #bdbab9;
+  height:50px;
+  line-height:50px;
+
+}
+.weatherPart {
+  color: #798895;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  background: white;
+  border: 2px solid #bdbab9;
+}
+.weatherPart img{
+  width: 35%;
+}
+.weatherPart i {
+  background-image: url(https://vortex.accuweather.com/adc2010/m/images/slate_ui/sprite-20151210-2x-4.png);
+  background-repeat: no-repeat;
+  background-size: 200px 3300px;
+  background-color: transparent;
+}
+.weatherPart strong {
+  font-weight: 100;
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 45px;
+  color: #1e384e;
+  margin-right: -10px;
+}
+.weatherPart .col-xs-6 {
+  border-left: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  padding-top: 10px;
+}
+#englishLink {
+  clear: both;
+  text-align: center;
+  height: 30px;
+  padding: 15px 0 5px;
+}
+#englishLink a{
+  display: block;
+  padding: 10px 0 10px 0;
+  background: #f05514;
+  color: #ffffff;
+}
+#id-img-logo2{
+  display: block;
+  width: 100%;
+}
+#id-div-links img {
+  width: 22px;
+  height:22px;
+  padding: 0;
+  margin: 0px;
+}
+.footer>.container {
+  margin-top: 25px;
+  padding: 0 10px ;
+  text-align: center;
+  font-size: 12px;
+  color:#141d27;
+}
+.footer>.container a {
+  color:#141d27;
+}
+div#id-div-links > div{
+  padding: 0px;
+  border-right: #cccccc 1px solid;
+}
+div#id-div-links > div:last-child{
+  border:none;
+}
+#id-div-copyright{
+
+}
+div.aqi {
+  color: #fff;
+  text-align: center;
+  min-width: 30px;
+  display: block;
+  line-height: 15px;
+  height: 15px;
+  border-radius: 13px;
+  float: left;
+  font-size: 14px;
+  background-color: #00E400;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+.div-hourStatue > div.col-xs-12{
+  position: relative;
+  font-size: 16px;
+  margin-left: 0px !important;
+  border: none !important;
+  background-color: #f7f6f5;
+  padding: 10px;
+  color: #f05514 !important;
+  display: block;
+  border-top: 1px solid #c7c4c3;
+  text-align: left;
+}
+.div-hourStatue > div.col-xs-12 > i{
+  background-image: url(img/sprite.png);
+  background-repeat: no-repeat;
+  background-size: 200px 3300px;
+  background-color: transparent;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  background-position: 100% -1250px;
+  right:5px;
+}
+.footer{
+  background: white;
+}
+.weatherDetail {
+  padding: 0px;
+}
+dayTab .container{
+  padding: 0px;
+}
+.detail-toggle {
+  background-color: #00afbe;
+  color: white;
+  min-height: 26px;
+  margin: 0;
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  background-image: url(img/sprite.png);
+  background-repeat: no-repeat;
+  background-size: 200px 3300px;
+  background-position:99% -866px;
+}
+.col-xs-12.title {
+  color: #00afbe;
+  display: block;
+  font-size: 13px;
+  padding: 10px 0 10px 10px;
+  height: 26px;
+  text-shadow: none;
+  font-weight: bold;
+  position: relative;
+  background: #ffffff;
+  border-bottom: 1px #f6f5f5 solid;
+  border-top: 1px #f6f5f5 solid;
+  text-align: left;
+  min-height: 36px;
+}
+.windspeed {
+  font-size: 14px;
+  color: #798895;
+  font-style: normal;
+}
+.wind img{
+  width: 100%;
+  margin: 40% auto auto 11%;
+}
+div.jluv {
+  font: 400 14px/1.3em arial,"Helvetica Neue",sans-serif;
+  border: none !important;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 13px;
+}
+
+div.yyll{
+  padding: auto 5%;
+}
+#id-a-prev {
+  height: 300px;
+
+}
+#id-a-next {
+  height: 300px;
+}
+#id-ol-choose {
+  display: none;
+}
