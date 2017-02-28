@@ -102,7 +102,6 @@ id-button-navmenu {
 .weatherPart {
   color: #798895;
   font-size: 11px;
-  margin-bottom: 90px;
   font-weight: 400;
   text-align: left;
   background: white;
@@ -269,4 +268,14 @@ div.jluv {
 
 div.yyll{
   padding: auto 5%;
+}
+#id-a-prev {
+  height: 300px;
+
+}
+#id-a-next {
+  height: 300px;
+}
+#id-ol-choose {
+  display: none;
 }
